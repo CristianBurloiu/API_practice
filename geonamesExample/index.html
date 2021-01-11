@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/css/style.css">
+    <title>Interface Page</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>API name</th>
+                <th>API description </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>countryCode</td>
+                <td>The is country code of any given point.</td>
+                <td><button class="btn" id="btn_cc">SUBMIT</button></td>
+            </tr>
+            <tr>
+                <td>countrySubdivison</td>
+                <td>The is a country code and the administrative subdivision of any given point.</td>
+                <td><button class="btn" id="btn_cs">SUBMIT</button></td>
+            </tr>
+            <tr>
+                <td>countryTopo30</td>
+                <td>GTOPO30 is a global digital elevation model (DEM) with a horizontal grid spacing of 30 arc seconds</td>
+                <td><button class="btn" id="btn_ct">SUBMIT</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    RESULTS
+                    <br>
+                    <div id="cc">
+                        <label>Latitude</label>
+                        <input type="number" id="lat">
+                        <label>Longitude</label>
+                        <input type="number" id="lng">
+                        <button id="btnRunCC">Run</button>
+                        <br><br>
+                        <div id="divResults">
+                            <table>
+                                <tr>
+                                    <td align="right">
+                                        Country Code:
+                                    </td>
+                                    <td id="txtCountryCode">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="cs">
+                        <label>Latitude</label>
+                        <input type="number" id="lat_cs">
+                        <label>Longitude</label>
+                        <input type="number" id="lng_cs">
+                        <button id="btnRunCS">Run</button>
+                        <br><br>
+                        <div id="divResults">
+                            <table>
+                                <tr>
+                                    <td align="right">
+                                        Admin Code:
+                                    </td>
+                                    <td id="txtAdminCode">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        Admin Name:
+                                    </td>
+                                    <td id="txtAdminName">
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="ct">
+                        <label>Latitude</label>
+                        <input type="number" id="lat_ct">
+                        <label>Longitude</label>
+                        <input type="number" id="lng_ct">
+                        <button id="btnRunCT">Run</button>
+                        <br><br>
+                        <div id="divResults">
+                            <table>
+                                <tr>
+                                    <td align="right">
+                                        Topo Code:
+                                    </td>
+                                    <td id="txtTopoCode">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+
+
+</body>
+
+</html>

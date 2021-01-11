@@ -1,0 +1,22 @@
+table 
+td {
+    border: 1px solid #333;
+}
+
+.btn {
+    border-radius: 12px;
+    background-color: blue;
+    color: azure;
+}
+#cc
+{
+    display: none;
+}
+#cs
+{
+    display: none;
+}
+#ct
+{
+    display: none;
+}
